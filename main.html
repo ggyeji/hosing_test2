@@ -1,5 +1,247 @@
-<html>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>뚜레쥬르 리디자인</title>
+  <link rel="stylesheet" href="css/redesign1.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      // 메뉴
+      $('.menu').mouseover(function(){
+          $(this).find('.submenu').stop().slideDown(400);
+      }).mouseout(function(){
+          $(this).find('.submenu').stop().slideUp(400);
+      });
+      // 비쥬얼
+      // let slideI = 0;
+			// let lateX = 0;
+			// intervalKey = setInterval(function(){
+			// 	if(slideI < 2){
+			// 		slideI++;
+			// 		lateX += -300;
+			// 	}else{
+			// 		slideI = 0;
+			// 		lateX = 0;
+			// 	}
+			// 	$(".visual ul > li").eq(slideI).parent().css({"transform":"translate("+lateX+"px)"});
+			// },2000);
+  })
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <!--header-->
+    <div id="header">
+      <div class="inner">
+        <h1><a href="#"><img src="images/logo.gif" alt="뚜레쥬르 로고"></a></h1>
+        <ul class="menu">
+          <li><a href="#">브랜드 스토리</a>
+            <ul class="submenu">
+              <li class="submenu"><a href="#">브랜드 소개</a></li>
+              <li class="submenu"><a href="#">재료</a></li>
+              <li class="submenu"><a href="#">빵 이야기</a></li>
+              <li class="submenu"><a href="#">뚜레쥬르</a></li>
+              <li class="submenu"><a href="#">매장 찾기</a></li>
+            </ul>
+          </li>
+          <li><a href="#">메뉴 안내</a>
+            <ul class="submenu">
+              <li class="submenu"><a href="#">빵</a></li>
+              <li class="submenu"><a href="#">델리</a></li>
+              <li class="submenu"><a href="#">음료</a></li>
+              <li class="submenu"><a href="#">케이크</a></li>
+              <li class="submenu"><a href="#">디저트&#38;스낵</a></li>
+            </ul>
+          </li>
+          <li><a href="#">새소식</a>
+            <ul class="submenu">
+              <li class="submenu"><a href="#">이용안내</a></li>
+              <li class="submenu"><a href="#">2022 특가</a></li>
+              <li class="submenu"><a href="#">신제품 할인</a></li>
+            </ul>
+          </li>
+          <li><a href="#">온라인 주문</a>
+            <ul class="submenu">
+              <li class="submenu"><a href="#">케이크 배달</a></li>
+              <li class="submenu"><a href="#">픽업/예약</a></li>
+              <li class="submenu"><a href="#">창업 안내</a></li>
+            </ul>
+          </li>
+          <li><a href="#">가맹점</a>
+            <ul class="submenu">
+              <li class="submenu"><a href="#">프렌차이즈</a></li>
+              <li class="submenu"><a href="#">가맹 신청</a></li>
+              <li class="submenu"><a href="#">가맹 관련 Q&#38;A</a></li>
+              <li class="submenu"><a href="#">창업 설명회</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="search_top">
+          <input type="text" placeholder="뚜레쥬르 신상품 SALE!">
+          <button><img src="images/search_icon.gif" alt="검색"></button>
+        </div>
+        <ul class="login">
+          <li><a href="#"><img src="images/top_login.gif" alt="회원정보 아이콘"></a></li>
+          <li><a href="#"><img src="images/top_shop.gif" alt="장바구니 아이콘"></a></li>
+        </ul>
+      </div>
+    </div>
+    <!--visual-->
+    <div id="visual">
+      <div class="container">
+        <ul class="inner"><a href="#"><img src="images/visual1.jpg" alt="메인배너"></a></ul>
+      </div>
+    </div>
+    <!--event-->
+    <div id="event">
+      <div class="container">
+        <h3>NEW&#38;EVENT</h3>
+        <div class="banner">
+          <p class="banner1"><a href="#"><img src="images/eventbanner1.gif" alt="오직 뚜레쥬르에서만 기프트 박스를 이용해보세요!"></a></p>
+          <p class="banner2"><a href="#"><img src="images/eventbanner2.gif" alt="COMMING SOON"></a></p>
+          <p class="banner3"><a href="#"><img src="images/eventbanner3.gif" alt="뚜레쥬르 여름 신메뉴 10% SALE"></a></p>
+          <p class="banner4"><a href="#"><img src="images/eventbanner4.gif" alt="SUMMER PICK?"></a></p>
+        </div>
+      </div>
+    </div>
+    <!-- banner_full -->
+    <div id="banner_full">
+      <div class="container">
+        <a href="#"><img src="images/banner.jpg" alt="뚜레쥬르는 신선한 재료와 깨끗한 환경에서 매일 생산하고 있습니다."></a>
+        <!-- <p class="btn"><a href="#">건강하고 맛있는 라이프</a></p> -->
+      </div>
+    </div>
+    <!-- best -->
+    <div id="best">
+      <div class="container">
+        <h3>BEST</h3>
+        <div class="list">
+          <ul>
+            <li>
+              <img src="images/best_1.gif" alt="퐁신퐁신 우유 도넛">
+              <h4>퐁신퐁신 우유 도넛</h4>
+              <p>폭신한 도넛 속 달콤한 바닐라우유크림을 가득 샌드한 제품</p>
+              <div class="box_information"><span class="sale">20%</span><span>4,640원</span><span class="line">5,800원</span></div>
+            </li>
+            <li>
+              <img src="images/best_2.gif" alt="퐁신퐁신 우유 도넛">
+              <h4>우유 버터 브레드</h4>
+              <p>브리오쉬 빵 속 달콤한 연유생크림을 가득 넣어 더욱 부드러운 제품</p>
+              <div class="box_information"><span class="sale">20%</span><span>4,240원</span><span class="line">5,300원</span></div>
+            </li>
+            <li>
+              <img src="images/best_3.gif" alt="퐁신퐁신 우유 도넛">
+              <h4>퐁신퐁신 바나나우유 도넛</h4>
+              <p>폭신한 도넛 속 달콤한 바나나우유 크림을 가득 샌드한 제품</p>
+              <div class="box_information"><span class="sale">10%</span><span>5,130원</span><span class="line">5,700원</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- menu -->
+    <div id="menu">
+      <div class="container">
+        <h3>MENU</h3>
+        <ul>
+          <li>
+            <h4>빵 <span>bread</span> </h4>
+            <img src="images/bread.gif" alt="빵">
+            <p><a href="#">자세히 보기</a></p>
+          </li>
+          <li>
+            <h4>델리 <span>deli</span> </h4>
+            <img src="images/deli.gif" alt="델리">
+            <p><a href="#">자세히 보기</a></p>
+          </li>
+          <li>
+            <h4>음료 <span>drink</span> </h4>
+            <img src="images/drink.gif" alt="음료">
+            <p><a href="#">자세히 보기</a></p>
+          </li>
+          <li>
+            <h4>케이크 <span>cake</span> </h4>
+            <img src="images/cake.gif" alt="케이크">
+            <p><a href="#">자세히 보기</a></p>
+          </li>
+          <li>
+            <h4>디저트 <span>dessert</span> </h4>
+            <img src="images/dessert.gif" alt="디저트">
+            <p><a href="#">자세히 보기</a></p>
+          </li>
+          <li>
+            <h4>스낵 <span>snack</span> </h4>
+            <img src="images/snack.gif" alt="스낵">
+            <p><a href="#">자세히 보기</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- store -->
+    <div id="store_area">
+      <h4>매장찾기</h4>
+      <p>건강한 데일리 베이커리, 뚜레쥬르 매장을 찾아보세요.</p>
+      <div class="box">
+        <ul>
+          <li><a href="#">직접검색</a></li>
+          <li><a href="#">지역검색</a></li>
+          <li><a href="#">관심매장</a></li>
+          <li><a href="#">판매매장 찾기</a></li>
+        </ul>
+        <div class="search">
+          <div class="search_box">
+            <input type="text" placeholder="매장명/주소 입력">
+            <button>검색</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sns -->
+    <div id="sns">
+      <div class="container">
+        <h3>@ touslesuours.official instagram</h3>
+        <ul>
+          <li><a href="#"></a><img src="images/sns1.gif" alt="뚜레쥬르 인스타그램 이미지"></li>
+          <li><a href="#"></a><img src="images/sns2.gif" alt="뚜레쥬르 인스타그램 이미지"></li>
+          <li><a href="#"></a><img src="images/sns3.gif" alt="뚜레쥬르 인스타그램 이미지"></li>
+          <li><a href="#"></a><img src="images/sns4.gif" alt="뚜레쥬르 인스타그램 이미지"></li>
+        </ul>
+      </div>
+    </div>
+    <!--footer-->
+    <div id="footer">
+      <div class="container">
+        <div class="top">
+          <ul>
+            <li>회사소개</li>
+            <li>기사채용안내</li>
+            <li>이용약관</li>
+            <li>위치기반서비스 이용약관</li>
+            <li>창업안내</li>
+            <li class="bold">개인정보처리방침</li>
+            <li>이메일무단수집거부</li>
+            <li>윤리신고센터</li>
+            <li>법적고지</li>
+            <li>사이트맵</li>
+          </ul>
+        </div>
+        <div class="bottom_btn">
+            <p><a href="#"><img src="images/facebook.gif" alt="페이스북 아이콘"></a></p>
+            <p><a href="#"><img src="images/tweeter.gif" alt="트위터 아이콘"></a></p>
+            <p><a href="#"><img src="images/instagram.gif" alt="인스타그램 아이콘"></a></p>
+        </div>
+        <div class="bottom">
+            <p>상호명:CJ푸드빌(주)</p>
+            <p>주소:(우)04555 서울시 중구 마른내로34(초동 106-9번지)KT&G을지로타워 3, 9-11층 CJ푸드빌㈜고객센터:1577-0700통신판매업종신고증 제 2011-서울중구-0771호사업자정보확인</p>
+            <p>호스팅제공자 : CJ올리브네트웍스(주)</p>
+            <p>사업자등록번호:312-81-42519대표이사:김찬호개인정보보호책임자:박정관</p>
+            <p>대표 이메일:help_master@cj.net)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
